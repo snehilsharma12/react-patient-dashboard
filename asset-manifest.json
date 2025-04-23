@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/health-dashboard/static/css/main.a630c6dc.css",
-    "main.js": "/health-dashboard/static/js/main.db466831.js",
-    "static/js/488.55425b11.chunk.js": "/health-dashboard/static/js/488.55425b11.chunk.js",
-    "index.html": "/health-dashboard/index.html",
-    "main.a630c6dc.css.map": "/health-dashboard/static/css/main.a630c6dc.css.map",
-    "main.db466831.js.map": "/health-dashboard/static/js/main.db466831.js.map",
-    "488.55425b11.chunk.js.map": "/health-dashboard/static/js/488.55425b11.chunk.js.map"
+    "main.css": "/react-patient-dashboard/static/css/main.a630c6dc.css",
+    "main.js": "/react-patient-dashboard/static/js/main.cf9677d9.js",
+    "static/js/488.55425b11.chunk.js": "/react-patient-dashboard/static/js/488.55425b11.chunk.js",
+    "index.html": "/react-patient-dashboard/index.html",
+    "main.a630c6dc.css.map": "/react-patient-dashboard/static/css/main.a630c6dc.css.map",
+    "main.cf9677d9.js.map": "/react-patient-dashboard/static/js/main.cf9677d9.js.map",
+    "488.55425b11.chunk.js.map": "/react-patient-dashboard/static/js/488.55425b11.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a630c6dc.css",
-    "static/js/main.db466831.js"
+    "static/js/main.cf9677d9.js"
   ]
 }
