@@ -40,28 +40,28 @@ function App() {
       <div className="container">
         <header className="header">
           <div className="logo">
-            <span><img src='/TestLogo.png' alt='' /></span>
+            <span><img src='${process.env.PUBLIC_URL}/TestLogo.png' alt='' /></span>
           </div>
           <nav className="nav-links">
             <a href="#" className="nav-item">
-              <span className="icon"><img src='/home.png' alt='' /></span> Overview
+              <span className="icon"><img src='${process.env.PUBLIC_URL}/home.png' alt='' /></span> Overview
             </a>
             <a href="#" className="nav-item active">
-              <span className="icon"><img src='/pat.png' alt='' /></span> Patients
+              <span className="icon"><img src='${process.env.PUBLIC_URL}/pat.png' alt='' /></span> Patients
             </a>
             <a href="#" className="nav-item">
-              <span className="icon"><img src='/cal.png' alt='' /></span> Schedule
+              <span className="icon"><img src='${process.env.PUBLIC_URL}/cal.png' alt='' /></span> Schedule
             </a>
             <a href="#" className="nav-item">
-              <span className="icon"><img src='/msg.png' alt='' /></span> Message
+              <span className="icon"><img src='${process.env.PUBLIC_URL}/msg.png' alt='' /></span> Message
             </a>
             <a href="#" className="nav-item">
-              <span className="icon"><img src='/tra.png' alt='' /></span> Transactions
+              <span className="icon"><img src='${process.env.PUBLIC_URL}/tra.png' alt='' /></span> Transactions
             </a>
           </nav>
           <div className="user-info">
             <img
-              src="/jose.png"
+              src="${process.env.PUBLIC_URL}/jose.png"
               alt="Dr. Jose Simmons"
             />
             <div className="user-details">
@@ -71,7 +71,7 @@ function App() {
             <div className="header-icons">
               <span className="separator"></span>
               <button className="icon-btn settings">
-                <span className="icon"><img src='/set.png' alt='' /></span>
+                <span className="icon"><img src='${process.env.PUBLIC_URL}/set.png' alt='' /></span>
               </button>
               <button className="icon-btn menu">
                 <span className="icon">⋮</span>
@@ -124,20 +124,20 @@ function App() {
                     <div className='threeCards'>
 
                       <div className="card respR">
-                        <img src='/resp.png' alt='' />
+                        <img src='${process.env.PUBLIC_URL}/resp.png' alt='' />
                         <p>Respiratory Rate</p>
                         <h4>{selectedPatient.diagnosis_history[0].respiratory_rate.value} bpm</h4>
                         <p> {selectedPatient.diagnosis_history[0].respiratory_rate.levels}</p>
                       </div>
 
                       <div className="card ctemp">
-                        <img src='/temp.png' alt='' />
+                        <img src='${process.env.PUBLIC_URL}/temp.png' alt='' />
                         <p>Temperature</p>
                         <h4>{selectedPatient.diagnosis_history[0].temperature.value} °F</h4>
                         <p> {selectedPatient.diagnosis_history[0].temperature.levels}</p>
                       </div>
                       <div className="card heartR">
-                        <img src='/bpm.png' alt='' />
+                        <img src='${process.env.PUBLIC_URL}/bpm.png' alt='' />
                         <p>Heart Rate</p>
                         <h4>{selectedPatient.diagnosis_history[0].heart_rate.value} bpm</h4>
                         <p> {selectedPatient.diagnosis_history[0].heart_rate.levels}</p>
@@ -186,14 +186,14 @@ function App() {
                   <img src={selectedPatient.profile_picture} alt={`${selectedPatient.name}'s avatar`} />
                   <h3>{selectedPatient.name}</h3>
                   <div className="detail-item">
-                    <img src="/birth.png" alt="Calendar Icon" />
+                    <img src="${process.env.PUBLIC_URL}/birth.png" alt="Calendar Icon" />
                     <p>
                       <strong>Date Of Birth</strong><p> {selectedPatient?.date_of_birth}</p>
                     </p>
                   </div>
                   <div className="detail-item">
                     <span className="icon">
-                      <img src="/female.png" alt="Gender Icon" />
+                      <img src="${process.env.PUBLIC_URL}/female.png" alt="Gender Icon" />
                     </span>
                     <p>
                       <strong>Gender</strong><p>{selectedPatient?.gender}</p>
@@ -201,7 +201,7 @@ function App() {
                   </div>
                   <div className="detail-item">
                     <span className="icon">
-                      <img src="/phone.png" alt="Phone Icon" />
+                      <img src="${process.env.PUBLIC_URL}/phone.png" alt="Phone Icon" />
                     </span>
                     <p>
                       <strong>Contact Info</strong><p>{selectedPatient?.phone_number}</p>
@@ -209,7 +209,7 @@ function App() {
                   </div>
                   <div className="detail-item">
                     <span className="icon">
-                      <img src="/phone.png" alt="Emergency Icon" />
+                      <img src="${process.env.PUBLIC_URL}/phone.png" alt="Emergency Icon" />
                     </span>
                     <p>
                       <strong>Emergency Contacts</strong><p>{selectedPatient?.emergency_contact}</p>
@@ -217,7 +217,7 @@ function App() {
                   </div>
                   <div className="detail-item">
                     <span className="icon">
-                      <img src="/ins.png" alt="Insurance Icon" />
+                      <img src="${process.env.PUBLIC_URL}/ins.png" alt="Insurance Icon" />
                     </span>
                     <p>
                       <strong>Insurance Provider</strong><p>{selectedPatient?.insurance_type}</p>
@@ -238,7 +238,7 @@ function App() {
                     <li key={index}>
                       {result}
                       <button>
-                        <img src='/dwn.png' alt='' />
+                        <img src='${process.env.PUBLIC_URL}/dwn.png' alt='' />
                       </button>
                     </li>
                   ))}
