@@ -8,6 +8,7 @@ I was given a design template for this page for a take-home assessment. I was gh
 - Component based structure for modular development.
 - Global Styles to comply with design template.
 - Utilized map to store and access patient data from API response.
+- Visit ![link to Github Pags](https://snehilsharma12.github.io/react-patient-dashboard/)
 
 # To Run
 
